@@ -304,7 +304,7 @@ main > .section {
 main > .section > div {
   max-width: 1200px;
   margin: auto;
-  padding: 0 24px;
+  padding: 0 28px;
 }
 
 main > .section:first-of-type {
@@ -313,9 +313,11 @@ main > .section:first-of-type {
 
 main .yellow.section{
   background-color: yellow;
+  border: 10px solid red;
 }
 main  .aqua{
   background-color: aqua;
+  border: 10px solid red;
 }
 
 @media (width >= 900px) {
