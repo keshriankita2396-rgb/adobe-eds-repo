@@ -84,6 +84,7 @@ body.appear {
   display: block;
 }
 
+
 header {
   height: var(--nav-height);
 }
@@ -308,6 +309,13 @@ main > .section > div {
 
 main > .section:first-of-type {
   margin-top: 0;
+}
+
+main .yellow.section{
+  background-color: yellow;
+}
+main  .aqua{
+  background-color: aqua;
 }
 
 @media (width >= 900px) {
