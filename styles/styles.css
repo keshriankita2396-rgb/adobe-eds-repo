@@ -317,7 +317,7 @@ main .yellow.section{
 }
 main  .aqua{
   background-color: aqua;
-  border: 10px solid red;
+  border: 10px solid red
 }
 
 @media (width >= 900px) {
@@ -329,7 +329,7 @@ main  .aqua{
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: skyblue;
   margin: 0;
   padding: 40px 0;
 }
