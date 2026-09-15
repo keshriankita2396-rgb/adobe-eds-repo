@@ -46,14 +46,14 @@ export default function decorate(block) {
   let curSlide = 0;
 
   // Maximum number of slides
-  let maxSlide = slides.length - 1;
+  const maxSlide = slides.length - 1;
 
   // Next slide button
-  nextSlide.addEventListener('click', function () {
+  nextSlide.addEventListener('click', function() {
     if (curSlide === maxSlide) {
       curSlide = 0;
     } else {
-      curSlide++;
+      curSlide += 1;
     }
 
     slides.forEach((slide, indx) => {
@@ -65,11 +65,11 @@ export default function decorate(block) {
   const prevSlide = document.querySelector('.btn-prev');
 
   // Previous slide button
-  prevSlide.addEventListener('click', function () {
+  prevSlide.addEventListener('click', function() {
     if (curSlide === 0) {
       curSlide = maxSlide;
     } else {
-      curSlide--;
+      curSlide -= 1;
     }
 
     slides.forEach((slide, indx) => {
