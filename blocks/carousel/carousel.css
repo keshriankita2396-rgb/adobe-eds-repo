@@ -1,0 +1,93 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Slide content */
+.carousel .slide-text {
+  width: 80%;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Images inside slides */
+.carousel .slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Next and Previous buttons */
+.carousel .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  font-size: 30px;
+  line-height: 40px;
+
+  cursor: pointer;
+}
+
+/* Previous button */
+.carousel .btn-prev {
+  left: 15px;
+}
+
+/* Next button */
+.carousel .btn-next {
+  right: 15px;
+}
+
+/* Hover effect */
+.carousel .btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .carousel {
+    height: 300px;
+  }
+
+  .carousel .btn {
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+
+  .carousel .btn-prev {
+    left: 8px;
+  }
+
+  .carousel .btn-next {
+    right: 8px;
+  }
+}
