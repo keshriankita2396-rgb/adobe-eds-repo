@@ -22,7 +22,7 @@ export default function decorate(block) {
       row.classList.add('slide');
 
       [...row.children].forEach((col, c) => {
-        console.log("====", row, col);
+        console.log('====', row, col);
 
         if (c === 0) {
           col.classList.add('slide-text');
@@ -32,7 +32,7 @@ export default function decorate(block) {
   });
 
   // Select all slides
-  const slides = document.querySelectorAll(".slide");
+  const slides = document.querySelectorAll('.slide');
 
   // Loop through slides and set each slide's translateX
   slides.forEach((slide, indx) => {
@@ -40,7 +40,7 @@ export default function decorate(block) {
   });
 
   // Select next slide button
-  const nextSlide = document.querySelector(".btn-next");
+  const nextSlide = document.querySelector('.btn-next');
 
   // Current slide counter
   let curSlide = 0;
@@ -49,7 +49,7 @@ export default function decorate(block) {
   let maxSlide = slides.length - 1;
 
   // Next slide button
-  nextSlide.addEventListener("click", function () {
+  nextSlide.addEventListener('click', function () {
     if (curSlide === maxSlide) {
       curSlide = 0;
     } else {
@@ -62,10 +62,10 @@ export default function decorate(block) {
   });
 
   // Select previous slide button
-  const prevSlide = document.querySelector(".btn-prev");
+  const prevSlide = document.querySelector('.btn-prev');
 
   // Previous slide button
-  prevSlide.addEventListener("click", function () {
+  prevSlide.addEventListener('click', function () {
     if (curSlide === 0) {
       curSlide = maxSlide;
     } else {
