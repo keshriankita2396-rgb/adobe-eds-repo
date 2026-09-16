@@ -3,9 +3,14 @@ const placeholders = await fetchPlaceholders(getMetadata("locale"));
 
 const { btnNxt, btnPre } = placeholders;
 export default function decorate(block) {
+    const btnNxt = placeholders.btnNxt || '>>';
+    const btnPre = placeholders.btnPre || '<<';
+     console.log('R1')
   console.log("placeholders ---> ", placeholders, btnNxt, btnPre);
+ 
   const rows = [...block.children];
   [...block.children].forEach((row, r) => {
+    console.log('R', r)
     if (r == 0) {
       const nextbtn = document.createElement("button");
       nextbtn.classList.add("btn");

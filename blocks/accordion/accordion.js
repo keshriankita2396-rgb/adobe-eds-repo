@@ -3,6 +3,7 @@ export default function decorate(block) {
 
   rows.forEach((row, index) => {
     const cells = [...row.children];
+    console.log('accordion')
 
     if (cells.length < 2) return;
 
