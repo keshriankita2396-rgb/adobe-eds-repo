@@ -316,8 +316,8 @@ main .yellow.section{
   border: 10px solid red;
 }
 main  .aqua{
-  background-color: aqua;
-  border: 10px solid red
+  background-color: aliceblue;
+  border: 10px solid #dddbdb
 }
 
 @media (width >= 900px) {

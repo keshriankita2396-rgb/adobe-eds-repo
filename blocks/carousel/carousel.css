@@ -50,8 +50,8 @@
     color: black;
   }
   .btn:active {
-    *transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
   .btn-prev {
     top: 45%;
     left: 2%;
@@ -61,4 +61,3 @@
     top: 45%;
     right: 2%;
   }
-  
